@@ -11,6 +11,7 @@ public partial class MainWindow
 	private global::Gtk.FileChooserButton filechooserbutton3;
 	private global::Gtk.Label speedLabel;
 	private global::Gtk.Label label2;
+	private global::Gtk.ProgressBar progressbar1;
 	private global::Gtk.Label GtkLabel2;
 
 	protected virtual void Build ()
@@ -81,6 +82,15 @@ public partial class MainWindow
 		global::Gtk.Fixed.FixedChild w6 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.label2]));
 		w6.X = 20;
 		w6.Y = 403;
+		// Container child fixed1.Gtk.Fixed+FixedChild
+		this.progressbar1 = new global::Gtk.ProgressBar ();
+		this.progressbar1.WidthRequest = 235;
+		this.progressbar1.HeightRequest = 25;
+		this.progressbar1.Name = "progressbar1";
+		this.fixed1.Add (this.progressbar1);
+		global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.progressbar1]));
+		w7.X = 221;
+		w7.Y = 158;
 		this.GtkAlignment.Add (this.fixed1);
 		this.frame2.Add (this.GtkAlignment);
 		this.GtkLabel2 = new global::Gtk.Label ();
@@ -94,6 +104,7 @@ public partial class MainWindow
 		}
 		this.DefaultWidth = 688;
 		this.DefaultHeight = 500;
+		this.progressbar1.Hide ();
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.button4.Clicked += new global::System.EventHandler (this.run_tests);

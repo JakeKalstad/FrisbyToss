@@ -111,6 +111,18 @@
                     <property name="Y">403</property>
                   </packing>
                 </child>
+                <child>
+                  <widget class="Gtk.ProgressBar" id="progressbar1">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">235</property>
+                    <property name="HeightRequest">25</property>
+                    <property name="Visible">False</property>
+                  </widget>
+                  <packing>
+                    <property name="X">221</property>
+                    <property name="Y">158</property>
+                  </packing>
+                </child>
               </widget>
             </child>
           </widget>
