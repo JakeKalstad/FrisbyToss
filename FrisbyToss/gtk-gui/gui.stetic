@@ -11,7 +11,7 @@
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="688 500">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="Title" translatable="yes">Frisby Toss</property>
     <property name="WindowPosition">CenterOnParent</property>
     <signal name="DeleteEvent" handler="OnDeleteEvent" />
     <child>
