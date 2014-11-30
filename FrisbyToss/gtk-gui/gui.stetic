@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/FrisbyToss.exe" internal="true" />
+    <widget-library name="MonoDevelop.Database.Components, Version=2.6.0.0, Culture=neutral" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="688 500">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Frame" id="frame2">
+        <property name="MemberName" />
+        <property name="HeightRequest">500</property>
+        <property name="ShadowType">None</property>
+        <child>
+          <widget class="Gtk.Alignment" id="GtkAlignment">
+            <property name="MemberName" />
+            <property name="Xalign">0</property>
+            <property name="Yalign">0</property>
+            <property name="LeftPadding">12</property>
+            <child>
+              <widget class="Gtk.Fixed" id="fixed1">
+                <property name="MemberName" />
+                <property name="HasWindow">False</property>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <placeholder />
+                </child>
+                <child>
+                  <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                    <property name="MemberName" />
+                    <property name="ShadowType">In</property>
+                    <child>
+                      <widget class="Gtk.NodeView" id="nodeview2">
+                        <property name="MemberName" />
+                        <property name="WidthRequest">650</property>
+                        <property name="HeightRequest">350</property>
+                        <property name="CanFocus">True</property>
+                        <property name="ShowScrollbars">True</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="X">-6</property>
+                    <property name="Y">6</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Button" id="button4">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">101</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Run Tests</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="run_tests" />
+                  </widget>
+                  <packing>
+                    <property name="X">545</property>
+                    <property name="Y">425</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.FileChooserButton" id="filechooserbutton3">
+                    <property name="MemberName" />
+                    <property name="WidthRequest">180</property>
+                    <property name="Title" translatable="yes">Choose Test Folder</property>
+                    <property name="Action">SelectFolder</property>
+                  </widget>
+                  <packing>
+                    <property name="X">5</property>
+                    <property name="Y">425</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="speedLabel">
+                    <property name="MemberName" />
+                  </widget>
+                  <packing>
+                    <property name="X">20</property>
+                    <property name="Y">381</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Label" id="label2">
+                    <property name="MemberName" />
+                  </widget>
+                  <packing>
+                    <property name="X">20</property>
+                    <property name="Y">403</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="GtkLabel2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">&lt;b&gt;Toss The Frisby&lt;/b&gt;</property>
+            <property name="UseMarkup">True</property>
+          </widget>
+          <packing>
+            <property name="type">label_item</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
